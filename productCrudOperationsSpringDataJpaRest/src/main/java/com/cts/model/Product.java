@@ -36,7 +36,7 @@ public class Product {
 	@Min(value=100,message="Product price should be above 100()")
 	@Max(value=100000,message="Product price should be less than of 100000()") //(100,100000) in this the given value not include
 	private int productPrice;
-	@Size(min=5,max=12,message="category letter length must be between[5,12]")  // size for string min,max for string
+	@Size(min=5,max=12,message="category letter size or length must be between[5,12]")  // size for string min,max for string
 	private String productCategory;
 	@Column(name = "quantity")
 	@Positive(message="quantity cant be zero or -ve")
